@@ -148,14 +148,14 @@ resource "aws_spot_instance_request" "rabbitmq" {
   )
 }
 
-resource "aws_route53_record" "rabbitmq" {
-  zone_id = "Z00609824R2L4GMJAHPM"
-  name    = "rabbitmq-${var.env}.mobiqa.online"
-  type    = "A"
-  ttl     = 30
-  records = [aws_spot_instance_request.rabbitmq.private_ip]
-}
-
+#resource "aws_route53_record" "rabbitmq" {
+#  zone_id = "Z00609824R2L4GMJAHPM"
+#  name    = "rabbitmq-${var.env}.mobiqa.online"
+#  type    = "A"
+#  ttl     = 30
+#  records = [aws_spot_instance_request.rabbitmq.private_ip]
+#}
+#
 
 
 
