@@ -44,7 +44,7 @@ resource "aws_iam_policy" "policy" {
           "ssm:GetParameter"
         ],
         "Resource" : [
-          "arn:aws:ssm:us-east-1:460304078594:parameter/${var.env}.${var.component}*"
+          "arn:aws:ssm:us-east-1:855509773460:parameter/${var.env}.${var.component}*"
         ]
       },
       {
